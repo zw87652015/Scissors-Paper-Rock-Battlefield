@@ -9,8 +9,8 @@ pygame.init()
 pygame.font.init()
 
 # Constants
-WINDOW_WIDTH = 1080
-WINDOW_HEIGHT = 640
+WINDOW_WIDTH = 960
+WINDOW_HEIGHT = 960
 DOT_RADIUS = 8
 BONUS_RADIUS = 6
 GLOBAL_MIN_SPEED = 0.1
@@ -22,7 +22,7 @@ FLEE_THRESHOLD = 150  # Increased from 100 to make dots more cautious
 INITIAL_DOTS_PER_GROUP = 90
 CIRCLE_SHRINK_SPEED = 0.4  # Reduced from 0.6 to give more time for strategy
 OUTSIDE_CIRCLE_FORCE = 8  # Reduced from 10 to make boundary less harsh
-INITIAL_CIRCLE_RADIUS = 650
+INITIAL_CIRCLE_RADIUS = 660
 RESTART_DELAY = 5000  # 5 seconds in milliseconds
 
 # Colors (Monet-inspired palette)
@@ -45,9 +45,9 @@ PURPLE = (180, 160, 210)    # Softer purple for bonus disks
 YELLOW = SUNSET_GOLD
 
 # Speed distribution parameters
-POISSON_MEAN_A = 1.2  # Mean for group A's max speed
+POISSON_MEAN_A = 1.0  # Mean for group A's max speed
 POISSON_MEAN_B = 1.0  # Mean for group B's max speed
-POISSON_MEAN_C = 0.8  # Mean for group C's max speed
+POISSON_MEAN_C = 1.0  # Mean for group C's max speed
 
 # Font setup
 FONT_LARGE = pygame.font.Font(None, 74)
